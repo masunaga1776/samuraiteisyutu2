@@ -1,0 +1,1116 @@
+html{ 
+  overflow:auto;
+}
+
+body{
+padding:0px;
+margin:0px;
+overflow:hidden;
+min-width:880px;
+height:3495px;
+animation: fadeIn 2s ease 0s 1 normal;      /*ぼやけながら出現するアニメーション*/
+-webkit-animation: fadeIn 2s ease 0s 1 normal;
+position:relative;
+top:50px;  
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+
+
+header {
+  background-color:red;
+  width:100%;
+  height: 120px;
+  position: fixed;
+  z-index:100;
+}
+
+
+header h1{
+  color:white;
+  position:relative;
+  top:30px;
+  left:40px;
+}
+
+header ul li{
+  list-style:none;
+  float:left;
+  margin-right:20px;  
+}
+
+
+.head-red{
+  position:relative;
+  bottom:30px;
+}
+
+
+.zenntai-red{
+position:relative;
+bottom:50px;
+}
+
+
+header ul li a{
+  text-decoration:none;
+  color:red;
+   display: inline-block;
+  position: relative;
+  padding: 5px 12px;
+  text-decoration: none;
+  background:white;/*ボタン色*/
+  color: red;
+  border-bottom:5px solid #AA0000;/*ボタン色より暗めに*/
+  border-right: solid 5px #AA0000;/*ボタン色より暗めに*/
+  border-radius:8px;/*ボタンに丸みをつける*/
+  
+}
+
+
+
+header ul li a:hover{
+  color:red;
+   background-color:white;
+}
+
+
+
+.body-zenntai{
+position:relative;
+top:100px;
+}
+
+
+
+header ul li a:active{
+   border:none;
+  -webkit-transform: translate(6px,6px);
+  transform: translate(6px,6px);
+}
+
+
+
+header ul li a:before{
+  content: " ";
+  position: absolute;
+  bottom: -5px;
+  left: -1px;
+  width: 0;
+  height: 0;
+  border-width: 0 6px 6px 0px;
+  border-style: solid;
+  border-color: transparent;
+  
+}
+
+
+
+header ul li a:after{
+  content: " ";
+  position: absolute;
+  top: -1px;
+  right: -5px;
+  width: 0;
+  height: 0;
+  border-width: 0px 6px 6px 0px;
+  border-style: solid;
+  
+  border-bottom-color: transparent;
+}
+
+
+
+img.pic1{ /*写真の中のクラスを使って写真を特定する場合はimg.クラス名で表記*/
+  height:220px;
+  width:100%;
+  object-position:50% 55%;
+  object-fit:cover;
+  position:relative;
+  top:100px; 
+}
+
+
+
+.container{/*divをcontainerで設定するとcontainerでかこまれたdivの要素が横並びになる。*/
+  display:flex;
+  justify-self:center;
+  text-align:center;
+  width:100%;
+}
+
+
+
+.body-zenntai h1{
+  text-align:center;
+  position:relative;
+  top:25px;
+}
+
+
+
+.box1{
+  width:33%;
+  position:relative;
+  left:40px;
+  background-image:url(https://images-na.ssl-images-amazon.com/images/I/61aKXwupNKL._SY355_.jpg);
+  background-repeat:no-repeat;
+  background-position:44% 20%;
+  box-shadow:0 0 8px #FF5192; 
+}
+
+
+.back1{
+  height: 100%;
+  background: rgba(250, 246, 246, 0.726);
+}
+
+.back1 ul li a{
+ text-decoration: none;
+ color: #000000;
+ font-weight: normal;
+}
+
+
+.back1 ul li a:hover{
+  color:#0099FF;
+  text-decoration:underline;
+ }
+
+.box1 h2{
+ font-size:20px;
+}
+
+
+.box2{
+  width:34%;
+  position:relative;
+  right:35px;
+  top:70px;
+}
+
+.box2 ul{
+text-align:center;
+}
+
+
+
+.review {
+position:relative;
+top:20px;
+font-size:25px;
+font-weight:bold;
+color:blue;
+}
+
+.review a:hover{
+  color: #0099FF;
+  text-decoration:underline;
+}
+
+.review a{
+  color:blue;
+  }
+  
+
+.box2 ul {
+  position: relative;
+  left:13px;
+}
+
+.box2 ul li a{
+text-decoration: none;
+
+}
+
+
+
+
+.box3{
+  box-shadow:0 0 8px ; 
+  position:relative;
+  right:40px;
+}
+
+.box3 h2{
+ font-size:20px;
+}
+
+.box1 ul li{
+  list-style:none;
+  position:relative;
+  right:20px;
+  bottom:20px;
+}
+
+
+
+.box2 ul li{
+  list-style:none; 
+}
+
+.box3{
+  width:33%;
+  background-image:url(https://images-na.ssl-images-amazon.com/images/I/51IHfsrN-nL._SY355_.jpg);
+background-repeat:no-repeat;
+background-position:50% 30% ;  
+background-size:300px;  
+}
+
+
+.back3{
+ height: 100%;
+  background: rgba(250, 246, 246, 0.726);  
+}
+
+
+.box3 ul li{
+   position:relative;
+  right:20px;
+  bottom:20px;
+  list-style:none;
+}
+
+
+img.pic2{
+  width:100%;
+  height:370px;
+  object-fit:cover;
+  object-position:50% 10%;
+  position: relative;
+  top:30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*ここからスケジュールとニュースの装飾*/
+
+.schduleandnews{
+  display:flex;
+  position:relative;
+  top:20px;
+  border-bottom: solid;
+  border-bottom-width:7px;
+  border-color:red;
+}
+
+
+.schdule{
+  width:33%;
+  text-align: center;
+  background-color: red;
+  background: linear-gradient(to top right, black 0%,red 100%);
+  height:810px;
+}
+
+.schdule h2{
+  color:white;
+}
+.schdule-content{
+  position: relative;
+  top:20px;
+ 
+}
+
+.schdule ul li{
+  list-style: none;
+  position: relative;
+  bottom:10px;
+  right:20px;
+  color:white;
+}
+
+.news h2 a{
+  color: #0000DD; 
+}
+.news h2 a:hover{
+  color:#0099FF;
+  text-decoration:underline;
+}
+
+ .news-title a{
+  color: #0000DD;  /*ニュースのリストの色を変える*/
+}
+
+.news-title a:hover{
+  color:#0099FF;
+  text-decoration:underline;
+}
+
+.news{
+  width:67%;
+  text-align: center;
+  height:810px;
+  
+}
+
+.news a{
+  text-decoration: none;
+}
+
+ p.news-p{
+ position:relative ;
+ bottom:20px;
+
+}
+
+p.news-title{
+font-size:18px; 
+font-weight:700;  
+}
+
+
+img.pic3{ 
+  width:33%;
+  height:510px;
+  object-fit:cover;
+  object-position:33%;
+}
+
+
+.playerandcoach{
+  display:flex;
+  padding:0px;
+  margin:0px;
+  position:relative;/* ニュース欄の変更のため一時的に移動*/
+  top:30px;
+}
+
+
+.playerlist{
+  position:relative;
+  bottom:40px;
+  left:20px;
+  display: flex;
+  flex-direction:column;
+}
+
+
+
+
+.playerlist h2{
+  position:relative;
+  left:25px;  
+}
+
+
+
+.fw ul li{
+  list-style:none;
+  float:left;
+  padding-right:20px;
+  position:relative;
+  bottom:20px;
+  right:14px; 
+  font-size :120%;
+}
+
+.fw ul li a{
+  text-decoration:none;
+  color:#0000DD;
+}
+
+.fw ul li a:hover{
+  color:#0099FF;               /**/
+  text-decoration:underline;
+}
+
+
+.mf{
+  position:relative;
+  bottom:35px;
+}
+
+
+.mf ul li{
+  list-style:none;
+  float:left;padding-right:20px;
+  position:relative;
+  bottom:20px;
+  right:15px; 
+  font-size :120%;
+}
+
+.mf ul li a{
+  color:#0000DD;
+  text-decoration:none;
+}
+
+.mf ul li a:hover{
+  text-decoration:underline;
+  color:#0099FF;
+}
+
+.df{
+  position:relative;
+  bottom:65px;
+}
+
+
+.df ul li{
+  list-style:none;
+  float:left;padding-right:20px;
+  position:relative;
+  bottom:20px;
+  right:15px; 
+  font-size:120%;
+}
+
+.df ul li a{
+  color:#0000DD;
+  text-decoration:none;
+}
+
+.df ul li a:hover{
+  color:#0099FF;  
+  text-decoration:underline;
+
+}
+
+.gk{
+  position:relative;
+  bottom:100px;
+}
+
+.gk ul li{
+  list-style:none;
+  float:left;padding-right:20px;
+  position:relative;
+  bottom:20px;
+  right:15px; 
+  font-size: 120%;
+}
+
+.gk ul li a{
+  color:#0000DD;
+  text-decoration:none;
+}
+
+.gk ul li a:hover{
+  color:#0099FF;
+  text-decoration:underline;
+
+}
+
+
+.co{
+  position:relative;
+  bottom:140px;
+}
+
+.co ul li{
+  list-style:none;
+  float:left;padding-right:20px;
+  position:relative;
+  bottom:20px;
+  right:15px; 
+  font-size:120%;
+}
+
+.co ul li a{
+  color:#0000DD;
+  text-decoration:none;
+}
+
+.co ul li a:hover{
+  color:#0099FF;
+  text-decoration:underline;
+
+}
+
+
+
+
+/*商品ページ*/
+
+
+.syouhinn-itirann{
+  display: flex;
+  position: relative ;
+  bottom:155px;
+  border-top:solid;
+  border-top-width:7px;
+  border-top-color:#000000;
+}
+
+.syouhinn-side{
+ width:10%; 
+ background-color: black;
+}
+
+.syouhinn{
+ display: flex;
+ border:10px;
+ width:80%;
+}
+
+.syouhinn-title h2{
+position:relative;
+left:60px; 
+}
+
+.syouhinn-zenntai{
+display: flex;
+flex-direction: column;
+width:100%;
+
+}
+
+.syouhinn-content img{
+  width: 270px;
+  height:243px;
+}
+
+.syouhinn-content p{
+text-align: center;
+}
+
+.syouhinn-content p a{
+text-decoration: none;
+color:#0000DD;
+}
+
+.syouhinn-content p a:hover{
+  color:#0099FF;
+  text-decoration:underline;
+  }
+
+
+
+
+
+
+
+
+
+  footer{
+    height:500px;
+    width:100%;
+    position:relative;
+    bottom:160px;
+    /*newsの部分を作り直すため*/
+  }
+  
+  .border2{
+    width:100%;
+    height:10px;
+    background-color: red;
+  }
+  .suponsar{
+   display:flex;
+   position: relative;
+   left:20px;
+  }
+  .suponsar1{
+   width:30%; 
+   margin:20px;
+  }
+  
+  .suponsar2{
+    width:30%;
+    margin:20px;
+   }
+   
+   .suponsar3{
+    width:30%;
+    margin:20px;
+   }
+   
+  
+  .suponsar1 img.sup1{ 
+    object-fit: cover;
+    object-position:50% 50%;
+    width:100%;
+    height:170px;
+  }
+  
+  .suponsar2 img.sup2{
+    width:100%;
+    height:170px;
+    object-fit: cover;
+    object-position:50% 50%;
+  }
+  
+  .suponsar3 img.sup3{ 
+   width:100%;
+   height:170px;
+    object-fit: cover;
+    object-position:50% 50%;
+  }
+  
+  .footmanue{
+    height:200px;
+    width:100%;
+    background-color: black;
+  }
+  
+  .footmanue ul li{
+    position:relative;
+    left:250px;
+    top:70px;
+    list-style: none;
+    float:left;
+    padding-right:40px;
+    font-size:140%;
+  }
+  
+  .footmanue ul li a{
+  color:#ffff;
+  text-decoration: none;
+  }
+  
+
+
+  footer p{
+    position: relative;
+    left:600px;
+  }
+
+
+
+
+
+
+
+
+  /*タブレット タブレット タブレット タブレット タブレット タブレット タブレット タブレット タブレット タブレット タブレット*/
+  @media screen and (max-width:1000px){
+
+body{
+  height:3247px;
+}
+
+
+img.pic1{ /*写真の中のクラスを使って写真を特定する場合はimg.クラス名で表記*/
+  height:140px;
+  width:100%;
+  object-position:50% 50%;
+  object-fit:cover;
+  position:relative;
+  top:90px; 
+}
+  
+.container{
+  display: flex;
+  position:relative;
+  left:35px;  
+}
+
+.box1{
+  width:30%;
+  height:420px;
+}
+
+.review{
+  font-size:16px;
+}
+
+.box3{
+  width:30%;
+  height:420px;
+}
+
+.submem{
+  position:relative;
+  bottom:30px;
+}
+
+img.pic2{
+  width:100%;
+  height:240px;
+  object-fit:cover;
+  object-position:50% 10%;
+  position: relative;
+  top:30px;
+}
+
+
+.schduleandnews{
+  display:flex;
+  position:relative;
+  top:20px;
+  border-bottom: solid;
+  border-bottom-width:7px;
+  border-color:red;
+  height:845px;
+}
+
+.schdule{
+  width:25%;
+  height:845px;
+}
+
+.news{
+  width:75%;
+  height:845px;
+}
+
+.schdule-content ul li{
+ margin-bottom:3px; 
+}
+
+img.pic3{ 
+  width:25%;
+  height:540px;
+  object-fit:cover;
+  object-position:43%;
+}
+
+.playerlist{
+  position: relative;
+  left:10px;
+}
+
+.syouhinn-content img{
+  width: 220px;
+  height:200px;
+}
+
+.suponsar1 img.sup1{ 
+  object-fit: cover;
+  object-position:50% 50%;
+  width:300px;
+  height:170px;
+}
+
+.suponsar2 img.sup2{
+  width:300px;
+  height:170px;
+  object-fit: cover;
+  object-position:50% 50%;
+}
+
+.suponsar3 img.sup3{ 
+ width:300px;
+ height:170px;
+  object-fit: cover;
+  object-position:50% 50%;
+}
+
+.suponsar{
+  position: relative;
+  right:5px;
+}
+
+.footmanue ul li{
+  position:relative;
+  left:160px;
+  top:80px;
+  list-style: none;
+  float:left;
+  padding-right:25px;
+  font-size:110%;
+}
+
+footer p{
+  position: relative;
+  left:400px;
+}
+
+}
+
+
+
+
+
+
+
+
+/*スマフォ用 スマフォ用 スマフォ用 スマフォ用 スマフォ用 スマフォ用 スマフォ用 スマフォ用 スマフォ用 スマフォ用 スマフォ用*/
+  @media screen and (max-width:670px){
+    
+    body{
+      height:2600px;
+    }
+
+    header {
+      background-color:red;
+      width:100%;
+      height: 70px;
+      position: fixed;
+      z-index: 1;
+    }
+    
+    
+    header h1{
+      color:white;
+      position:relative;
+      top:20px;
+      left:40px;
+      font-size:20px;
+    }
+    
+    header ul li{
+      list-style:none;
+      float:left;
+      margin-right:10px;  
+      font-size:10px;
+    }
+
+    img.pic1{ /*写真の中のクラスを使って写真を特定する場合はimg.クラス名で表記*/
+      height:100px;
+      width:670px;
+      object-position:50% 50%;
+      object-fit:cover;
+      position:relative;
+      top:40px; 
+    }
+    
+    .body-zenntai {
+     width:670px;
+    }
+
+    .game-title h1{
+      font-size:25px;
+    }
+
+    .game-title{
+      position:relative;
+      bottom:90px;
+    }
+
+
+    .container{
+      width:670px;
+      display: flex;
+      position:relative;
+      bottom:80px;
+      height:280px;
+    }
+    
+    .box1{
+      width:25%;
+      height:280px;
+      background-position:50% 20% ;  
+      background-size:auto 200px;
+    }
+    
+    .back1 h2{
+      font-size:14px;
+    } 
+
+    .back1 ul li{
+      font-size:10px;
+    }
+    
+    .box2{
+    width:40%;
+    height:280px;
+    }
+
+    .box2 ul li{
+      font-size:12px;
+    }
+
+    .review{
+      font-size:12px;
+    }
+    
+    .box3{
+      width:25%;
+      height:280px;
+      background-position:50% 20% ;  
+      background-size:auto 200px;
+    }
+    
+    .back3 h2{
+      font-size:14px;
+    } 
+
+    .back3 ul li{
+      font-size:10px;
+    }
+
+    .submem{
+      position:relative;
+      bottom:30px;
+    }
+    
+    img.pic2{
+      width:100%;
+      height:160px;
+      object-fit:cover;
+      object-position:50% 10%;
+    }
+    
+    .news-pic{
+      position:relative;
+      bottom:70px;
+    }
+    
+    .schduleandnews{
+      display:flex;
+      border-bottom: solid;
+      border-bottom-width:7px;
+      padding-bottom:0px;
+      border-color:#ff0000;
+      height:777px;
+      width:670px;
+    }
+    
+    .schdule{
+      width:20%;
+      position:relative;
+      bottom:67px;
+    }
+    
+    .schdule h2{
+      font-size:17px;
+    }
+
+    .schdule ul li{
+      font-size:16px;
+    }
+
+    .news{
+      width:80%;
+      position:relative;
+      bottom:67px;
+    }
+
+    .news h2{
+      font-size:20px;
+    }
+    
+    .news-title a{
+    font-size:15px;
+    }
+
+    .news-p{
+    font-size:12px;
+    }
+
+    .schdule-content ul li{
+     margin-bottom:3px; 
+    }
+    
+    
+    img.pic3{ 
+      width:20%;
+      height:503px;
+      object-fit:cover;
+      object-position:46%;
+      position:relative;
+      
+    }
+
+    .schdule{
+      width:20%;
+      height:845px;
+    }
+    
+    .playerlist{
+      position: relative;
+      left:0px;
+    }
+
+
+    /*ここから続き*/
+
+    .playerlist h1{
+      font-size:25px;
+    }
+
+    .playerlist h2{
+      font-size:20px;
+    }
+
+    .playerlist ul li{
+      font-size:17px;
+    }
+
+  
+    .syouhinn-side{
+      visibility:hidden;
+    }
+      
+    .syouhinn-title h2{
+      font-size: 20px;
+      position: relative;
+      left:30px;
+    }
+     
+    .syouhinn-content img{
+      width: 154px;
+      height:140px;
+    }
+    
+    .suponsar1 img.sup1{ 
+      object-fit: cover;
+      object-position:50% 50%;
+      height:80px;  
+      width:150px;
+    }
+    
+    .suponsar2 img.sup2{
+      width:150px;
+      height:80px;
+      object-fit: cover;
+      object-position:50% 50%;
+    }
+    
+    .suponsar3 img.sup3{ 
+     width:150px;
+     height:80px;
+      object-fit: cover;
+      object-position:50% 50%;
+    }
+    
+    .suponsar{
+      position: relative;
+      right:5px;
+    }
+    
+      
+    .footmanue ul li{
+      position:relative;
+      left:30px;
+      top:40px;
+      list-style: none;
+      float:left;
+      padding-right:25px;
+      font-size:90%;
+    }
+    
+    .footmanue{
+      height:100px;
+      width:100%;
+      background-color: black;
+    }
+
+
+
+    footer p{
+      position: relative;
+      left:250px;
+    }
+    
+
+
+
+  }
+
+
+
+
+
+
+
+
